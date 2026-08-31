@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Delu Maduekwe — GIS Portfolio</title>
+<meta name="description" content="GIS portfolio of Delu Maduekwe — spatial analysis, cartography, and geospatial project work.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#overview">Skip to content</a>
+
+<!-- ============================================================
+     LEGEND NAV — the site's signature element.
+     Each nav item is a classification swatch, echoing a land-cover
+     legend. The color + code map 1:1 to the section it links to.
+     Edit labels/codes here if you reorder or rename sections.
+     ============================================================ -->
+<header class="legend-nav" id="top">
+  <a class="legend-nav__brand" href="#top">
+    <span class="brand-mark" aria-hidden="true"></span>
+    <span class="brand-name">Home</span>
+  </a>
+
+  <button class="legend-nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="legendList">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav class="legend-nav__classes" id="legendList" aria-label="Section navigation">
+    <a class="legend-swatch" data-target="overview" href="#overview">
+      <span class="swatch swatch--barren" aria-hidden="true"></span>
+      <span class="legend-swatch__code">00</span>
+      <span class="legend-swatch__label">Overview</span>
+    </a>
+    <a class="legend-swatch" data-target="featured" href="#featured">
+      <span class="swatch swatch--forest" aria-hidden="true"></span>
+      <span class="legend-swatch__code">01</span>
+      <span class="legend-swatch__label">Featured</span>
+    </a>
+    <a class="legend-swatch" data-target="coursework" href="#coursework">
+      <span class="swatch swatch--cultivated" aria-hidden="true"></span>
+      <span class="legend-swatch__code">02</span>
+      <span class="legend-swatch__label">Projects</span>
+    </a>
+    <a class="legend-swatch" data-target="skills" href="#skills">
+      <span class="swatch swatch--wetland" aria-hidden="true"></span>
+      <span class="legend-swatch__code">03</span>
+      <span class="legend-swatch__label">Skills</span>
+    </a>
+    <a class="legend-swatch" data-target="resume" href="#resume">
+      <span class="swatch swatch--developed" aria-hidden="true"></span>
+      <span class="legend-swatch__code">04</span>
+      <span class="legend-swatch__label">Resume</span>
+    </a>
+    <a class="legend-swatch" data-target="contact" href="#contact">
+      <span class="swatch swatch--water" aria-hidden="true"></span>
+      <span class="legend-swatch__code">05</span>
+      <span class="legend-swatch__label">Contact</span>
+    </a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ============================================================
+       HERO / OVERVIEW
+       ============================================================ -->
+  <section id="overview" class="hero">
+    <div class="hero__content">
+      <p class="eyebrow">GEOSPATIAL PORTFOLIO · SEE LEGEND ABOVE</p>
+      <h1>Delu Maduekwe</h1>
+      <p class="hero__role">Bachelor of Applied Technology - Geographic Information Systems<br>Southern Alberta Institute of Technology, in progress</p>
+      <p class="hero__blurb">
+        GIS professional with a background in geology and project coordination, focused on using spatial analysis, remote sensing, mapping, GIS automation and delivering web products to solve real-world problems.
+
+I’m particularly interested in applying GIS within infrastructure, energy, and municipal work, where spatial data can support planning, asset management, environmental analysis, and better decision-making. My goal is to keep building strong technical skills while contributing to practical, collaborative projects with real impact.
+      </p>
+
+      <dl class="hero__meta">
+        <div class="hero__meta-item">
+          <dt>Currently</dt>
+          <dd>Job hunting</dd>
+        </div>
+        <div class="hero__meta-item">
+          <dt>Core Tools</dt>
+          <dd>ArcGIS Pro, AGOL, Python, SQL</dd>
+        </div>
+        <div class="hero__meta-item">
+          <dt>Based in</dt>
+          <dd>Calgary, Alberta</dd>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FEATURED WORK — class 41, Forest (mature / best work)
+       Duplicate .card as many times as you have flagship projects.
+       ============================================================ -->
+  <section id="featured" class="section section--forest">
+    <header class="section__head">
+      <span class="section__code">01</span>
+      <div>
+        <h2>Featured Work</h2>
+        <p class="section__desc">Selected projects that showcase my skills and experience.</p>
+      </div>
+    </header>
+
+    <div class="card-grid">
+
+      <article class="card">
+        <div class="card__media">
+          <img src="images/Capstone_Poster.jpg" alt="Highway to the Trigger Zone">
+        </div>
+        <div class="card__body">
+          <p class="card__eyebrow">Capstone · Complete</p>
+          <h3>Highway to the Trigger Zone</h3>
+          <p class="card__desc">The capstone project transformed 72.5 km² of complex terrain on Morrissey Ridge near Fernie, BC, into a reviewable set of 268 candidate avalanche trigger zones for future drone-based avalanche control. Using 1 m LiDAR, satellite imagery, and land-cover data, our team developed a six-factor AHP-weighted suitability model based on slope, aspect, elevation, ruggedness, plan curvature, and vegetation.
+
+The workflow automated candidate-zone extraction and attached coordinates and terrain attributes to each site, while validation against existing avalanche terrain ratings helped assess the model’s performance. Results were published as web layers and interactive 2D/3D scenes to support treatment planning, site review, and potential drone flight routing.</p>
+          <p class="card__team">Team: Delu Maduekwe, John Abboud, Teng Zhang<br>Client: Centre for Innovation and Research in Unmanned Systems (CIRUS)</p>
+          <div class="card__links">
+            <a href="pdfs/Capstone_ADT_Poster.pdf" class="pill-link">Poster(PDF) ↗</a>
+            <a href="ppts/Capstone_ADT.pptx" class="pill-link">Presentation ↗</a>
+            <a href="https://experience.arcgis.com/experience/4e05e93636ba4c13bdeafa3d26483826" class="pill-link">Experience Builder ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__media">
+          <img src="images/Livability_Index.jpg" alt="Calgary Livability Index">
+        </div>
+        <div class="card__body">
+          <p class="card__eyebrow">Semester 1 Final Project · Complete</p>
+          <h3>Calgary Livability Index</h3>
+          <p class="card__desc">The Calgary Livability Index project used spatial analysis to compare community-level affordability, safety, accessibility, and access to amenities across the city. The analysis combined housing prices, park proximity, transit access, and a break-and-enter rate normalized by community population, while also examining the spatial distribution and significance of these variables.
+
+The final index showed a clear spatial pattern, with higher livability scores generally clustering in central, western, and northwestern Calgary, while lower scores were more common in parts of the east and south. The project demonstrated how GIS can reveal broader urban patterns and support evidence-based municipal planning and decision-making.</p>
+          <p class="card__team">Team: Delu Maduekwe, Teng Zhang, Apram Singh</p>
+          <div class="card__links">
+            <a href="images/Livability_Index.jpg" class="pill-link">Map ↗</a>
+            <a href="pdfs/Group1_FinalProject_Report.pdf" class="pill-link">Report(PDF) ↗</a>
+            <a href="ppts/Group1_Final_PPT.pptx" class="pill-link">Presentation ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__media">
+          <img src="images/LFC_StoryMap.jpg" alt="All Roads Lead to Anfield">
+        </div>
+        <div class="card__body">
+          <p class="card__eyebrow">ArcGIS StoryMaps Interactive Narrative</p>
+          <h3>All Roads Lead to Anfield</h3>
+          <p class="card__desc">Follow the story of Liverpool Football Club through geography, from its roots in the city of Liverpool to its place in English football, European success, and global identity. All Roads Lead to Anfield uses interactive maps, sidecars, map tours, and multimedia to explore iconic locations, rival clubs, European triumphs, and the origins of Liverpool players and legends</p>
+          <div class="card__links">
+            <a href="pdfs/GEOS450_Assign01_DM.pdf" class="pill-link">Report(PDF) ↗</a>
+            <a href="https://arcg.is/1jTHyj6" class="pill-link">Story Maps ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__media">
+          <img src="images/Africa_poster.jpg" alt="Electricity access rate in Africa for 2023">
+        </div>
+        <div class="card__body">
+          <p class="card__eyebrow">GEOS 457 Final Poster · Complete</p>
+          <h3>Electricity access rate in Africa for 2023</h3>
+          <p class="card__desc">The capstone project transformed 72.5 km² of complex terrain on Morrissey Ridge near Fernie, BC, into a reviewable set of 268 candidate avalanche trigger zones for future drone-based avalanche control. Using 1 m LiDAR, satellite imagery, and land-cover data, our team developed a six-factor AHP-weighted suitability model based on slope, aspect, elevation, ruggedness, plan curvature, and vegetation.
+
+The workflow automated candidate-zone extraction and attached coordinates and terrain attributes to each site, while validation against existing avalanche terrain ratings helped assess the model’s performance. Results were published as web layers and interactive 2D/3D scenes to support treatment planning, site review, and potential drone flight routing.</p>
+          <p class="card__team">Cartographers: Delu Maduekwe, John Abboud</p>
+          <div class="card__links">
+            <a href="pdfs/Africa_electricity_access.pdf" class="pill-link">Poster(PDF) ↗</a>
+            <a href="pdfs/GEOS457_Assign2_Project_Description.pdf" class="pill-link">Report(PDF) ↗</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       Projects — class 82, Cultivated Crops (still growing)
+       Grouped by term. Duplicate .term-group per semester/year,
+       and .work-item per project within it.
+       ============================================================ -->
+ <section id="coursework" class="section section--cultivated">
+  <header class="section__head">
+    <span class="section__code">82</span>
+    <div>
+      <h2>Other Projects</h2>
+      <p class="section__desc">[Smaller maps, assignments, and side projects worth a look.]</p>
+    </div>
+  </header>
+
+  <div class="work-list">
+    <div class="work-item">
+      <div class="work-item__media">
+        <img src="pdfs/California_Final_457.jpg" alt="California Cycling Rates">
+      </div>
+      <div class="work-item__body">
+        <h4>California Road Cycling Rates</h4>
+        <p>An 11×17" map showing road cycling participation rates across California counties. Participation was normalized by adult population so counties could be compared more fairly, revealing clear regional differences across the state. The final layout combines a choropleth map, histogram legend, and a summary table to highlight counties with the highest and lowest participation rates while demonstrating data visualization and cartographic design for an irregularly shaped state.</p>
+        <p class="work-item__tags">GEOS 457 · Cartography · Chloropleth</p>
+      </div>
+    </div>
+
+    <div class="work-item">
+      <div class="work-item__media">
+        <img src="images/Florida_Seniors_TotPop.jpg" alt="Florida Seniors Total Population">
+      </div>
+      <div class="work-item__body">
+        <h4>Florida Seniors Total Population</h4>
+        <p>A proportional symbol map of Florida showing the total number of seniors in each county and highlighting counties identified as statistical outliers. The map uses thematic mapping techniques to make population patterns and unusual values easier to see and understand.</p>
+        <p class="work-item__tags">GEOS 419 · Data Analysis and Output · Proportional Symbols </p>
+      </div>
+    </div>
+
+    <div class="work-item">
+      <div class="work-item__media">
+        <img src="images/California_Cycling_Rates.jpg" alt="California Cycling Rates">
+      </div>
+      <div class="work-item__body">
+        <h4>[Map or project title]</h4>
+        <p>[1–2 sentences on the method and dataset.]</p>
+        <p class="work-item__tags">[Tool] · [Technique] · [Course code, if any]</p>
+      </div>
+    </div>
+
+     <div class="work-item">
+      <div class="work-item__media">
+        <img src="images/California_Cycling_Rates.jpg" alt="California Cycling Rates">
+      </div>
+      <div class="work-item__body">
+        <h4>[Map or project title]</h4>
+        <p>[1–2 sentences on the method and dataset.]</p>
+        <p class="work-item__tags">[Tool] · [Technique] · [Course code, if any]</p>
+      </div>
+    </div>
+
+    <div class="work-item">
+      <div class="work-item__media">
+        <img src="images/California_Cycling_Rates.jpg" alt="California Cycling Rates">
+      </div>
+      <div class="work-item__body">
+        <h4>[Map or project title]</h4>
+        <p>[1–2 sentences on the method and dataset.]</p>
+        <p class="work-item__tags">[Tool] · [Technique] · [Course code, if any]</p>
+      </div>
+    </div>
+
+     <div class="work-item">
+      <div class="work-item__media">
+        <img src="images/California_Cycling_Rates.jpg" alt="California Cycling Rates">
+      </div>
+      <div class="work-item__body">
+        <h4>[Map or project title]</h4>
+        <p>[1–2 sentences on the method and dataset.]</p>
+        <p class="work-item__tags">[Tool] · [Technique] · [Course code, if any]</p>
+      </div>
+    </div>
+
+    <div class="work-item">
+      <div class="work-item__media">
+        <img src="images/California_Cycling_Rates.jpg" alt="California Cycling Rates">
+      </div>
+      <div class="work-item__body">
+        <h4>[Map or project title]</h4>
+        <p>[1–2 sentences on the method and dataset.]</p>
+        <p class="work-item__tags">[Tool] · [Technique] · [Course code, if any]</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- ============================================================
+       SKILLS — class 95, Wetland (foundation / groundwater)
+       ============================================================ -->
+  <section id="skills" class="section section--wetland">
+    <header class="section__head">
+      <span class="section__code">03</span>
+      <div>
+        <h2>Skills &amp; Tools</h2>
+        <p class="section__desc">Summary of technical abilities and software proficiency.</p>
+      </div>
+    </header>
+
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>Software</h3>
+        <ul class="tag-list">
+          <li>ArcGIS Pro</li>
+          <li>QGIS</li>
+          <li>ArcGIS Online</li>
+          <li>Pix4D</li>
+          <li>FME</li>
+          <li>Survey123/Field Maps</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Programming & Data</h3>
+        <ul class="tag-list">
+          <li>Python/ArcPy</li>
+          <li>PostgreSQL/PostGIS</li>
+          <li>SQL</li>
+          <li>Excel</li>
+          <li>Access</li>
+          <li>Geodatabase Design</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Spatial Analysis</h3>
+        <ul class="tag-list">
+          <li>Spatial Statistics</li>
+          <li>Remote Sensing</li>
+          <li>Suitability Modelling</li>
+          <li>Network Analysis</li>
+          <li>LiDAR/Terrain Analysis</li>
+          <li>Cost Surface/Least Cost Path Analysis</li>
+          
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Cartography & Web GIS </h3>
+        <ul class="tag-list">
+          <li>Cartographic Design</li>
+          <li>Web Mapping</li>
+          <li>Map Layout Design</li>
+          <li>2D / 3D Visualization</li>
+          <li>ArcGIS Dashboards</li>
+          <li>Experience Builder</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       RESUME — class 04, Developed High Intensity (built/career)
+       ============================================================ -->
+  <section id="resume" class="section section--developed">
+    <header class="section__head">
+      <span class="section__code">04</span>
+      <div>
+        <h2>Resume</h2>
+        <p class="section__desc">My professional background and experience.</p>
+      </div>
+    </header>
+
+    <div class="resume-panel">
+
+  <div class="resume-block">
+    <h3>GIS Experience Summary</h3>
+    <p>Experienced in spatial analysis, geospatial data management, remote sensing, cartographic production, and GIS automation. Skilled in ArcGIS Pro, ArcGIS Online, SQL, Python/ArcPy, geodatabases, raster and terrain analysis, LiDAR, spatial statistics, web GIS, and geospatial visualization. Recent project work includes suitability modelling, land-cover classification, network and hot spot analysis, interactive web mapping, mobile data collection, and automated GIS workflows.</p>
+  </div>
+
+  <div class="resume-block">
+    <h3>Education</h3>
+
+    <div class="education-item">
+      <h4>Geographic Information Systems (GIS) - Applied Degree (In Progress)</h4>
+      <p class="education-item__meta">Southern Alberta Institute of Technology (Calgary, AB) · Expected completion: September 2026</p>
+      <p class="education-item__label">Relevant coursework</p>
+      <ul class="tag-list">
+        <li>GIS Data Capture and Modelling</li>
+        <li>Enterprise and Web GIS</li>
+        <li>Cartography and Geo-visualization</li>
+        <li>Spatial Analysis</li>
+        <li>GIS Programming</li>
+        <li>Geospatial Databases</li>
+      </ul>
+    </div>
+
+    <div class="education-item">
+      <h4>Geological Sciences (Major), Commerce (Minor) - Bachelor of Science </h4>
+      <p class="education-item__meta">University of British Columbia (Vancouver, BC) · 2014–2020</p>
+      <p>Coursework and field experience in geological mapping, structural geology, stratigraphy, sedimentology, petrography, geochemistry, and quantitative geological analysis, with an emphasis on field data collection, interpretation, and technical communication.</p>
+    </div>
+  </div>
+
+  <h3 class="resume-subheading">Work Experience</h3>
+
+  <a class="button" href="resume/DM_Resume.pdf" download>Download resume (PDF) ↓</a>
+
+  <ol class="timeline">
+    <li class="timeline__item">
+      <p class="timeline__date">2026–Present</p>
+      <h4>Games Coordinator - Calgary Sport and Social Club</h4>
+      <p>Coordinate and officiate adult league sports games, managing schedules, league rules, and safety standards.</p>
+    </li>
+    <li class="timeline__item">
+      <p class="timeline__date">2021–2025</p>
+      <h4>Programs Officer - Ontario Chamber of Commerce</h4>
+      <p>Supported large-scale funding programs, reviewing applications and managing applicant, employer, financial, and program data.</p>
+    </li>
+    <li class="timeline__item">
+      <p class="timeline__date">Ongoing</p>
+      <h4>Freelance Photographer - DLM Media</h4>
+      <p>Plan and deliver client photography projects, managing communication, scheduling, budgets, editing, and final file delivery.</p>
+  </ol>
+</div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT — class 11, Open Water (where things meet)
+       ============================================================ -->
+  <section id="contact" class="section section--water">
+    <header class="section__head">
+      <span class="section__code">05</span>
+      <div>
+        <h2>Contact</h2>
+        <p class="section__desc">About me and how to reach me.</p>
+      </div>
+    </header>
+
+    <div class="contact-intro">
+    <div class="contact-photo">
+      <img src="images/headshot.jpg" alt="[Your Name]">
+    </div>
+    <p class="contact-blurb">
+      I was born and raised in Nigeria and have also lived in the Netherlands, Malaysia, and Canada, which has shaped how I think about places and communities, all the while growing my love for geography. I’m drawn to GIS because it sits at the intersection of data and creativity, turning complex information into something visual and useful, much like photography.
+      I’m currently completing the BGIS program at SAIT and looking for an entry-level GIS role, especially in infrastructure, energy, or municipal work. Outside of GIS, I’m usually taking photos, playing volleyball, cycling, or snowboarding.
+    </p>
+    </div>
+
+    <div class="contact-panel">
+      <a class="contact-link" href="mailto:delumadu@gmail.com">Email</a>
+      <a class="contact-link" href="https://linkedin.com/in/delu-maduekwe" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a class="contact-link" href="https://dlmmedia.myportfolio.com" target="_blank" rel="noopener">Photography ↗</a>
+      <a class="contact-link" href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>Built by Delu Maduekwe · Portfolio · <a href="#top">Back to top ↑</a></p>
+    </footer>
+
+    <div class="lightbox" id="lightbox">
+      <img src="" alt="" id="lightboxImg">
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -423,6 +423,7 @@ img { max-width: 100%; display: block; }
 
 .work-list {
   display: flex;
+  align-items: flex-start;
   gap: 1.25rem;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -488,6 +489,19 @@ img { max-width: 100%; display: block; }
 .card__media img,
 .work-item__media img {
   cursor: zoom-in;
+}
+
+.work-item__media {
+  width: 100%;
+  overflow: hidden;
+}
+
+.work-item__media img {
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  object-fit: cover;
+  display: block;
 }
 
 /* lightbox overlay */

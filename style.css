@@ -464,7 +464,11 @@ img { max-width: 100%; display: block; }
   }
 }
 
-.work-item__media { aspect-ratio: 16 / 10; }
+.work-item__media {
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--radius) var(--radius) 0 0;
+}
 .work-item__body { padding: 1rem 1.15rem 1.2rem; }
 .work-item__body h4 { font-size: 1.02rem; }
 .work-item__tags {
@@ -491,16 +495,9 @@ img { max-width: 100%; display: block; }
   cursor: zoom-in;
 }
 
-.work-item__media {
-  width: 100%;
-  overflow: hidden;
-}
-
 .work-item__media img {
   width: 100%;
   height: auto;
-  max-height: 420px;
-  object-fit: cover;
   display: block;
 }
 

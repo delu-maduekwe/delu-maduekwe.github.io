@@ -186,18 +186,21 @@ The final index showed a clear spatial pattern, with higher livability scores ge
   </section>
 
   <!-- ============================================================
-       Projects — class 82, Cultivated Crops (still growing)
+       Projects — class 02, Cultivated Crops (still growing)
        Grouped by term. Duplicate .term-group per semester/year,
        and .work-item per project within it.
        ============================================================ -->
  <section id="coursework" class="section section--cultivated">
   <header class="section__head">
-    <span class="section__code">82</span>
+    <span class="section__code">02</span>
     <div>
       <h2>Other Projects</h2>
-      <p class="section__desc">[Smaller maps, assignments, and side projects worth a look.]</p>
+      <p class="section__desc">Smaller maps, assignments, and side projects worth a look.</p>
     </div>
   </header>
+
+  <div class="subsection">
+  <h3 class="subsection__title">Maps &amp; Visualizations</h3>
 
   <div class="work-list">
     <div class="work-item">
@@ -222,25 +225,71 @@ The final index showed a clear spatial pattern, with higher livability scores ge
       </div>
     </div>
 
+  <div class="work-item">
+    <div class="mini-carousel">
+    <div class="mini-carousel__track">
+      <img src="images/SPG_LUA_1jpg.jpg" alt="Land use redesignation map for Kingsland Community">
+      <img src="images/SPG_LUA_2.jpg" alt="Land use redesignation map for Kingsland Community">
+    </div>
+    <div class="mini-carousel__dots">
+      <span class="mini-carousel__dot is-active"></span>
+      <span class="mini-carousel__dot"></span>
+    </div>
+  </div>
+  <div class="work-item__body">
+    <h4>Land Use Redesignation Maps</h4>
+    <p>Created a series of land use redesignation maps for Sparks Planning Group in Calgary, for sites in Kingsland community. The maps showed the subject parcels, surrounding land-use districts, nearby buildings, streets and lane access, and the required notification area to support planning applications and community context review.
+
+The project focused on producing clear, professional planning maps combining cadastral, land-use, and municipal data into submission-ready layouts for real development proposals.</p>
+    <p class="work-item__tags">Freelance · Land Use Mapping · Real Estate Development </p>
+  </div>
+</div>
+
+ <div class="work-item">
+  <div class="mini-carousel">
+    <div class="mini-carousel__track">
+      <img src="images/ATS_NTS.jpg" alt="Land Location South of Carseland, AB">
+      <img src="images/410_LandLocation_Model.jpg" alt="Land Location Model">
+    </div>
+    <div class="mini-carousel__dots">
+      <span class="mini-carousel__dot is-active"></span>
+      <span class="mini-carousel__dot"></span>
+    </div>
+  </div>
+  <div class="work-item__body">
+    <h4>Automated ATS and NTS Land Location</h4>
+    <p>Built an automated GIS workflow to identify ATS and NTS land locations from a GPS point and prepare supporting map data for the surrounding study area. Using ModelBuilder and Python, the workflow identified the legal land description, processed township and NTS datasets, standardized projections, and organized the final outputs into a geodatabase. The project demonstrated how automation can streamline land-location and map-preparation workflows commonly used in surveying, resource, and infrastructure projects.</p>
+    <p class="work-item__tags">GEOS456 · GIS Automation · Map Sheets · ATS</p>
+    <div class="card__links">
+      <a href="https://github.com/delu-maduekwe/gis-python-scripts/blob/main/GEOS456_Assign02_Maduekwe.py" class="pill-link" target="_blank" rel="noopener">View Script ↗</a>
+    </div>
+  </div>
+</div>
+
     <div class="work-item">
       <div class="work-item__media">
-        <img src="images/California_Cycling_Rates.jpg" alt="California Cycling Rates">
+        <img src="images/surfacemodel.jpg" alt="Interpolated surface model">
       </div>
       <div class="work-item__body">
-        <h4>[Map or project title]</h4>
-        <p>[1–2 sentences on the method and dataset.]</p>
-        <p class="work-item__tags">[Tool] · [Technique] · [Course code, if any]</p>
+        <h4>Interpolated Surface Model</h4>
+        <p>Created an interpolated surface model from a set of elevation points using inverse distance weighting (IDW) in ArcGIS. The model was used to visualize terrain variations and support environmental impact assessments.</p>
+        <p class="work-item__tags">GEOS409 · Spatial Analysis · Interpolation</p>
       </div>
     </div>
 
      <div class="work-item">
       <div class="work-item__media">
-        <img src="images/California_Cycling_Rates.jpg" alt="California Cycling Rates">
+        <img src="images/Toulouse_Layout_DM.jpg" alt="Toulouse Cycling Routes">
       </div>
       <div class="work-item__body">
-        <h4>[Map or project title]</h4>
-        <p>[1–2 sentences on the method and dataset.]</p>
-        <p class="work-item__tags">[Tool] · [Technique] · [Course code, if any]</p>
+        <h4>Toulouse Cycling Network Analysis</h4>
+        <p>Built a Python/ArcPy geoprocessing workflow to analyze cycling networks across Toulouse, France. The script imported and projected multiple datasets, intersected cycling routes with commune boundaries, and calculated total network length by commune to identify the areas with the greatest cycling infrastructure.
+
+The final output combined automated spatial processing with a three-map layout and summary table, demonstrating Python scripting, spatial overlay, data summarization, and cartographic presentation.</p>
+        <p class="work-item__tags">GEOS456 · Spatial Analysis · GIS Automation</p>
+        <div class="card__links">
+          <a href="https://github.com/delu-maduekwe/gis-python-scripts/blob/main/GEOS456_Assign01_DM.py" class="pill-link" target="_blank" rel="noopener">View Script ↗</a>
+        </div>
       </div>
     </div>
 
@@ -254,26 +303,25 @@ The final index showed a clear spatial pattern, with higher livability scores ge
         <p class="work-item__tags">[Tool] · [Technique] · [Course code, if any]</p>
       </div>
     </div>
+  </div>
+  </div>
+    <div class="subsection">
+      <h3 class="subsection__title">Web Apps &amp; Dashboards</h3>
 
-     <div class="work-item">
-      <div class="work-item__media">
-        <img src="images/California_Cycling_Rates.jpg" alt="California Cycling Rates">
-      </div>
-      <div class="work-item__body">
-        <h4>[Map or project title]</h4>
-        <p>[1–2 sentences on the method and dataset.]</p>
-        <p class="work-item__tags">[Tool] · [Technique] · [Course code, if any]</p>
-      </div>
-    </div>
-
-    <div class="work-item">
-      <div class="work-item__media">
-        <img src="images/California_Cycling_Rates.jpg" alt="California Cycling Rates">
-      </div>
-      <div class="work-item__body">
-        <h4>[Map or project title]</h4>
-        <p>[1–2 sentences on the method and dataset.]</p>
-        <p class="work-item__tags">[Tool] · [Technique] · [Course code, if any]</p>
+      <div class="work-list">
+        <div class="app-item">
+          <div class="work-item__media">
+            <img src="images/your-screenshot.jpg" alt="[App name] screenshot">
+          </div>
+          <div class="work-item__body">
+            <h4>[App or dashboard title]</h4>
+            <p>[1–2 sentences on what it does and who it's for.]</p>
+            <p class="work-item__tags">[Tool] · [Technique]</p>
+            <div class="card__links">
+              <a href="#" class="pill-link" target="_blank" rel="noopener">Open web app ↗</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -363,7 +411,7 @@ The final index showed a clear spatial pattern, with higher livability scores ge
     <h3>Education</h3>
 
     <div class="education-item">
-      <h4>Geographic Information Systems (GIS) - Applied Degree (In Progress)</h4>
+      <h4>Geographic Information Systems (GIS) - Applied Degree [In Progress]</h4>
       <p class="education-item__meta">Southern Alberta Institute of Technology (Calgary, AB) · Expected completion: September 2026</p>
       <p class="education-item__label">Relevant coursework</p>
       <ul class="tag-list">
@@ -432,7 +480,7 @@ The final index showed a clear spatial pattern, with higher livability scores ge
       <a class="contact-link" href="mailto:delumadu@gmail.com">Email</a>
       <a class="contact-link" href="https://linkedin.com/in/delu-maduekwe" target="_blank" rel="noopener">LinkedIn ↗</a>
       <a class="contact-link" href="https://dlmmedia.myportfolio.com" target="_blank" rel="noopener">Photography ↗</a>
-      <a class="contact-link" href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub ↗</a>
+      <a class="contact-link" href="https://github.com/delu-maduekwe" target="_blank" rel="noopener">GitHub ↗</a>
     </div>
   </section>
 

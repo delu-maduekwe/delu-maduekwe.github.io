@@ -43,7 +43,7 @@ if (sections.length && swatches.length && 'IntersectionObserver' in window) {
 const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.getElementById('lightboxImg');
 
-document.querySelectorAll('.card__media img, .work-item__media img').forEach((img) => {
+document.querySelectorAll('.card__media img, .work-item__media img, .mini-carousel__track img').forEach((img) => {
   img.addEventListener('click', () => {
     lightboxImg.src = img.src;
     lightboxImg.alt = img.alt;
@@ -59,4 +59,21 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') {
     lightbox.classList.remove('is-open');
   }
+});
+
+// Sync dots for mini-carousels inside project cards
+document.querySelectorAll('.mini-carousel').forEach((carousel) => {
+  const track = carousel.querySelector('.mini-carousel__track');
+  const dots = carousel.querySelectorAll('.mini-carousel__dot');
+
+  track.addEventListener('scroll', () => {
+    const index = Math.round(track.scrollLeft / track.clientWidth);
+    dots.forEach((dot, i) => dot.classList.toggle('is-active', i === index));
+  });
+
+  dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => {
+      track.scrollTo({ left: track.clientWidth * i, behavior: 'smooth' });
+    });
+  });
 });

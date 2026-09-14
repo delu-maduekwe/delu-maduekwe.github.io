@@ -421,6 +421,36 @@ img { max-width: 100%; display: block; }
 .term-group__title { font-size: 1.2rem; }
 .term-group__note { color: var(--ink-soft); font-size: 0.95rem; }
 
+.subsection {
+  max-width: 62rem;
+  margin: 0 auto 3rem;
+}
+.subsection:last-child {
+  margin-bottom: 0;
+}
+
+.subsection__title {
+  font-size: 1.1rem;
+  color: var(--ink-soft);
+  margin-bottom: 0.25rem;
+}
+
+.work-list {
+  max-width: 62rem;
+  margin: 0 auto;
+}
+
+.app-item {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 300px;
+  scroll-snap-align: start;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--bg-raised);
+}
+
 .work-list {
   display: flex;
   align-items: flex-start;
@@ -499,6 +529,49 @@ img { max-width: 100%; display: block; }
   width: 100%;
   height: auto;
   display: block;
+}
+
+/* Mini carousel for individual projects */
+.mini-carousel {
+  position: relative;
+}
+
+.mini-carousel__track {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.mini-carousel__track::-webkit-scrollbar {
+  display: none;
+}
+
+.mini-carousel__track img {
+  flex: 0 0 100%;
+  width: 100%;
+  height: auto;
+  scroll-snap-align: start;
+  display: block;
+  cursor: zoom-in;
+}
+
+.mini-carousel__dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.6rem 0;
+  background: var(--bg-raised);
+}
+
+.mini-carousel__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--line);
+}
+.mini-carousel__dot.is-active {
+  background: var(--c-cultivated);
 }
 
 /* lightbox overlay */

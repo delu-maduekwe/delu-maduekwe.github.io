@@ -443,7 +443,7 @@ img { max-width: 100%; display: block; }
 .app-item {
   display: flex;
   flex-direction: column;
-  flex: 0 0 300px;
+  flex: 0 0 420px;
   scroll-snap-align: start;
   border: 1px solid var(--line);
   border-radius: var(--radius);
